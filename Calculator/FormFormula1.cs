@@ -104,14 +104,24 @@ namespace Calculator
 
         private void ResultFormula1_Click(object sender, EventArgs e)
         {
-            double ro = Convert.ToDouble(textBox_ro_form1.Text);
-            double g = Convert.ToDouble(textBox_g_form1.Text);
-            double H = Convert.ToDouble(textBox_H_form1.Text);
-            double P;
-            P = ro * g * H;
-            P = Math.Round(P, 8);
+            
+            try
+            {
+                double ro = Convert.ToDouble(textBox_ro_form1.Text);
+                double g = Convert.ToDouble(textBox_g_form1.Text);
+                double H = Convert.ToDouble(textBox_H_form1.Text);
+                double P;
+                P = ro * g * H;
+                P = Math.Round(P, 8);
 
-            textBox_P_form1.Text = Convert.ToString(P);
+                textBox_P_form1.Text = Convert.ToString(P);
+            }
+
+            catch
+            {
+                MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
     }
 }

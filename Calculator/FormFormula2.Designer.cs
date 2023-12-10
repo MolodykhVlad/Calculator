@@ -247,6 +247,7 @@ namespace Calculator
             this.textBox_Pu_form2.Name = "textBox_Pu_form2";
             this.textBox_Pu_form2.Size = new System.Drawing.Size(188, 45);
             this.textBox_Pu_form2.TabIndex = 24;
+            this.textBox_Pu_form2.TextChanged += new System.EventHandler(this.textBox_Pu_form2_TextChanged);
             // 
             // textBox_g_form2
             // 
@@ -265,9 +266,10 @@ namespace Calculator
             // 
             // textBox_PP_form2
             // 
-            this.textBox_PP_form2.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox_PP_form2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(77)))));
             this.textBox_PP_form2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox_PP_form2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.textBox_PP_form2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(213)))), ((int)(((byte)(185)))));
             this.textBox_PP_form2.Location = new System.Drawing.Point(612, 568);
             this.textBox_PP_form2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox_PP_form2.Multiline = true;
@@ -333,7 +335,7 @@ namespace Calculator
             this.label6.Location = new System.Drawing.Point(608, 178);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(261, 89);
+            this.label6.Size = new System.Drawing.Size(261, 129);
             this.label6.TabIndex = 31;
             this.label6.Text = "Рпл. – пластовое давление, МПа.";
             // 

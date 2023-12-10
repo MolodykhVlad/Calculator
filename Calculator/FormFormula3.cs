@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Calculator
 {
-    public partial class FormFormula2 : Form
+    public partial class FormFormula3 : Form
     {
-        public FormFormula2()
+        public FormFormula3()
         {
             InitializeComponent();
         }
@@ -106,18 +106,16 @@ namespace Calculator
         {
             
 
-
             try
             {
-                double p = Convert.ToDouble(textBox_p_form2.Text);
-                double g = Convert.ToDouble(textBox_g_form2.Text);
-                double L = Convert.ToDouble(textBox_L_form2.Text);
-                double Pu = Convert.ToDouble(textBox_Pu_form2.Text);
-                double PP;
-                PP = p * g * L + Pu;
-                PP = Math.Round(PP, 8);
+                double ro = Convert.ToDouble(textBox_ro_form3.Text);
+                double C = Convert.ToDouble(textBox_С_form3.Text);
+                double H = Convert.ToDouble(textBox_H_form3.Text);
+                double P;
+                P = (H * ro) / C;
+                P = Math.Round(P, 8);
 
-                textBox_PP_form2.Text = Convert.ToString(PP);
+                textBox_P_form3.Text = Convert.ToString(P);
             }
 
             catch
@@ -126,9 +124,14 @@ namespace Calculator
             }
         }
 
-        private void textBox_Pu_form2_TextChanged(object sender, EventArgs e)
+        private void textBox_H_form3_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void SvorotButton_formformula_1_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

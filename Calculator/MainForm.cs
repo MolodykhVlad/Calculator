@@ -136,7 +136,16 @@ namespace Calculator
         private void buttonFormula4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            
+            FormFormula4 formformula4 = new FormFormula4();
+            formformula4.Show();
+        }
+
+        private void buttonFormula3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormFormula3 formformula3 = new FormFormula3();
+            formformula3.Show();
         }
     }
+    
 }

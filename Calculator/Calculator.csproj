@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormFormula3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFormula3.Designer.cs">
+      <DependentUpon>FormFormula3.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormFormula2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormFormula2.Designer.cs">
       <DependentUpon>FormFormula2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFormula4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFormula4.Designer.cs">
+      <DependentUpon>FormFormula4.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -66,8 +78,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormFormula3.resx">
+      <DependentUpon>FormFormula3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormFormula2.resx">
       <DependentUpon>FormFormula2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFormula4.resx">
+      <DependentUpon>FormFormula4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

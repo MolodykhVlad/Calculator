@@ -1,7 +1,7 @@
 ﻿
 namespace Calculator
 {
-    partial class FormFormula1
+    partial class FormFormula3
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Calculator
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFormula1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFormula3));
             this.TopPanel = new System.Windows.Forms.Panel();
             this.SvorotButton_formformula_1 = new System.Windows.Forms.Label();
             this.ExitButton_formformula_1 = new System.Windows.Forms.Label();
@@ -39,11 +39,11 @@ namespace Calculator
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.textBox_ro_form1 = new System.Windows.Forms.TextBox();
+            this.textBox_ro_form3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox_g_form1 = new System.Windows.Forms.TextBox();
-            this.textBox_H_form1 = new System.Windows.Forms.TextBox();
-            this.textBox_P_form1 = new System.Windows.Forms.TextBox();
+            this.textBox_С_form3 = new System.Windows.Forms.TextBox();
+            this.textBox_H_form3 = new System.Windows.Forms.TextBox();
+            this.textBox_P_form3 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.ResultFormula1 = new System.Windows.Forms.Button();
@@ -79,6 +79,7 @@ namespace Calculator
             this.SvorotButton_formformula_1.TabIndex = 3;
             this.SvorotButton_formformula_1.Text = "—";
             this.SvorotButton_formformula_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SvorotButton_formformula_1.Click += new System.EventHandler(this.SvorotButton_formformula_1_Click_1);
             this.SvorotButton_formformula_1.MouseEnter += new System.EventHandler(this.SvorotButton_formformula_1_MouseEnter);
             this.SvorotButton_formformula_1.MouseLeave += new System.EventHandler(this.SvorotButton_formformula_1_MouseLeave);
             // 
@@ -119,7 +120,7 @@ namespace Calculator
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(938, 62);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Рпл. = ρ*g*H";
+            this.label1.Text = "Pпл. = (H*ρ)/C";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
@@ -166,16 +167,16 @@ namespace Calculator
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
             // 
-            // textBox_ro_form1
+            // textBox_ro_form3
             // 
-            this.textBox_ro_form1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox_ro_form1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.textBox_ro_form1.Location = new System.Drawing.Point(93, 314);
-            this.textBox_ro_form1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox_ro_form1.Multiline = true;
-            this.textBox_ro_form1.Name = "textBox_ro_form1";
-            this.textBox_ro_form1.Size = new System.Drawing.Size(335, 45);
-            this.textBox_ro_form1.TabIndex = 9;
+            this.textBox_ro_form3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_ro_form3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.textBox_ro_form3.Location = new System.Drawing.Point(93, 314);
+            this.textBox_ro_form3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox_ro_form3.Multiline = true;
+            this.textBox_ro_form3.Name = "textBox_ro_form3";
+            this.textBox_ro_form3.Size = new System.Drawing.Size(335, 45);
+            this.textBox_ro_form3.TabIndex = 9;
             // 
             // label4
             // 
@@ -187,47 +188,48 @@ namespace Calculator
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(340, 71);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Введите ρ –  плотность жидкости, кг/м3.";
+            this.label4.Text = "Введите ρ – плотность жидкости, кг/м3.";
             // 
-            // textBox_g_form1
+            // textBox_С_form3
             // 
-            this.textBox_g_form1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox_g_form1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox_g_form1.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBox_g_form1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_g_form1.Location = new System.Drawing.Point(508, 314);
-            this.textBox_g_form1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox_g_form1.Multiline = true;
-            this.textBox_g_form1.Name = "textBox_g_form1";
-            this.textBox_g_form1.ReadOnly = true;
-            this.textBox_g_form1.Size = new System.Drawing.Size(335, 45);
-            this.textBox_g_form1.TabIndex = 11;
-            this.textBox_g_form1.Text = "9,8";
+            this.textBox_С_form3.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox_С_form3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_С_form3.Cursor = System.Windows.Forms.Cursors.No;
+            this.textBox_С_form3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox_С_form3.Location = new System.Drawing.Point(508, 314);
+            this.textBox_С_form3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox_С_form3.Multiline = true;
+            this.textBox_С_form3.Name = "textBox_С_form3";
+            this.textBox_С_form3.ReadOnly = true;
+            this.textBox_С_form3.Size = new System.Drawing.Size(335, 45);
+            this.textBox_С_form3.TabIndex = 11;
+            this.textBox_С_form3.Text = "102";
             // 
-            // textBox_H_form1
+            // textBox_H_form3
             // 
-            this.textBox_H_form1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox_H_form1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.textBox_H_form1.Location = new System.Drawing.Point(93, 557);
-            this.textBox_H_form1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox_H_form1.Multiline = true;
-            this.textBox_H_form1.Name = "textBox_H_form1";
-            this.textBox_H_form1.Size = new System.Drawing.Size(335, 45);
-            this.textBox_H_form1.TabIndex = 12;
+            this.textBox_H_form3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_H_form3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.textBox_H_form3.Location = new System.Drawing.Point(93, 557);
+            this.textBox_H_form3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox_H_form3.Multiline = true;
+            this.textBox_H_form3.Name = "textBox_H_form3";
+            this.textBox_H_form3.Size = new System.Drawing.Size(335, 45);
+            this.textBox_H_form3.TabIndex = 12;
+            this.textBox_H_form3.TextChanged += new System.EventHandler(this.textBox_H_form3_TextChanged);
             // 
-            // textBox_P_form1
+            // textBox_P_form3
             // 
-            this.textBox_P_form1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(77)))));
-            this.textBox_P_form1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox_P_form1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
-            this.textBox_P_form1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(213)))), ((int)(((byte)(185)))));
-            this.textBox_P_form1.Location = new System.Drawing.Point(508, 557);
-            this.textBox_P_form1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox_P_form1.Multiline = true;
-            this.textBox_P_form1.Name = "textBox_P_form1";
-            this.textBox_P_form1.ReadOnly = true;
-            this.textBox_P_form1.Size = new System.Drawing.Size(335, 45);
-            this.textBox_P_form1.TabIndex = 13;
+            this.textBox_P_form3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(77)))));
+            this.textBox_P_form3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_P_form3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold);
+            this.textBox_P_form3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(213)))), ((int)(((byte)(185)))));
+            this.textBox_P_form3.Location = new System.Drawing.Point(508, 557);
+            this.textBox_P_form3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox_P_form3.Multiline = true;
+            this.textBox_P_form3.Name = "textBox_P_form3";
+            this.textBox_P_form3.ReadOnly = true;
+            this.textBox_P_form3.Size = new System.Drawing.Size(335, 45);
+            this.textBox_P_form3.TabIndex = 13;
             // 
             // label2
             // 
@@ -239,7 +241,7 @@ namespace Calculator
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(340, 71);
             this.label2.TabIndex = 14;
-            this.label2.Text = "Введите g – ускорение свободного падения, м/с2.";
+            this.label2.Text = "C – коэффициент, равный 102 при измерении в Мпа.";
             // 
             // label5
             // 
@@ -298,7 +300,7 @@ namespace Calculator
             this.label3.TabIndex = 18;
             this.label3.Text = "Рпл. – пластовое давление, МПа.";
             // 
-            // FormFormula1
+            // FormFormula3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -309,11 +311,11 @@ namespace Calculator
             this.Controls.Add(this.ResultFormula1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox_P_form1);
-            this.Controls.Add(this.textBox_H_form1);
-            this.Controls.Add(this.textBox_g_form1);
+            this.Controls.Add(this.textBox_P_form3);
+            this.Controls.Add(this.textBox_H_form3);
+            this.Controls.Add(this.textBox_С_form3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox_ro_form1);
+            this.Controls.Add(this.textBox_ro_form3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);
@@ -322,7 +324,7 @@ namespace Calculator
             this.Controls.Add(this.TopPanel);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(115)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormFormula1";
+            this.Name = "FormFormula3";
             this.Text = "Form2";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormFormula1_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FormFormula1_MouseMove);
@@ -347,11 +349,11 @@ namespace Calculator
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TextBox textBox_ro_form1;
+        private System.Windows.Forms.TextBox textBox_ro_form3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox_g_form1;
-        private System.Windows.Forms.TextBox textBox_H_form1;
-        private System.Windows.Forms.TextBox textBox_P_form1;
+        private System.Windows.Forms.TextBox textBox_С_form3;
+        private System.Windows.Forms.TextBox textBox_H_form3;
+        private System.Windows.Forms.TextBox textBox_P_form3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button ResultFormula1;

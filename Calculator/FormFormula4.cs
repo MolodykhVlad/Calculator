@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Calculator
 {
-    public partial class FormFormula2 : Form
+    public partial class FormFormula4 : Form
     {
-        public FormFormula2()
+        public FormFormula4()
         {
             InitializeComponent();
         }
@@ -104,20 +104,28 @@ namespace Calculator
 
         private void ResultFormula1_Click(object sender, EventArgs e)
         {
-            
-
-
             try
             {
-                double p = Convert.ToDouble(textBox_p_form2.Text);
-                double g = Convert.ToDouble(textBox_g_form2.Text);
-                double L = Convert.ToDouble(textBox_L_form2.Text);
-                double Pu = Convert.ToDouble(textBox_Pu_form2.Text);
-                double PP;
-                PP = p * g * L + Pu;
-                PP = Math.Round(PP, 8);
-
-                textBox_PP_form2.Text = Convert.ToString(PP);
+                double ro = Convert.ToDouble(textBox_ro_form4.Text);
+                double Pst = Convert.ToDouble(textBox_Pst_form4.Text);
+                double L = Convert.ToDouble(textBox_L_form4.Text);
+                double Exp = Convert.ToDouble(textBox_Exp_form4.Text);
+                double Tpkr = Convert.ToDouble(textBox_Tpkr_form4.Text);
+                double Ppr = Convert.ToDouble(textBox_Ppr_form4.Text);
+                double TL = Convert.ToDouble(textBox_TL_form4.Text);
+                double Tns = Convert.ToDouble(textBox_Tns_form4.Text);
+                double T = Convert.ToDouble(textBox_T_form4.Text);
+                double P;
+                double s;
+                double z;
+                double Tsr;
+                double Tpr;
+                Tsr = ((TL - Tns) / Math.Log(TL / Tns)) - 273;
+                Tpr = T / Tpkr;
+                z = Math.Pow((0.4 * Math.Log(Tpr) + 0.73), Ppr) + 0.1 * Ppr;
+                s = (0.03415 * ro * L) / (z * Tsr)/ Math.Pow(10, 6);
+                P = Math.Round(Pst * Math.Pow(Exp, s), 10);
+                textBox_P_form4.Text = Convert.ToString(P);
             }
 
             catch
@@ -126,9 +134,19 @@ namespace Calculator
             }
         }
 
-        private void textBox_Pu_form2_TextChanged(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox_P_form4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SvorotButton_formformula_1_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
