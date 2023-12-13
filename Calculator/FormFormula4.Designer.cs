@@ -93,7 +93,7 @@ namespace Calculator
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopPanel.Location = new System.Drawing.Point(0, 0);
             this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(1290, 82);
+            this.TopPanel.Size = new System.Drawing.Size(1287, 82);
             this.TopPanel.TabIndex = 1;
             // 
             // SvorotButton_formformula_1
@@ -113,6 +113,7 @@ namespace Calculator
             // 
             // ExitButton_formformula_1
             // 
+            this.ExitButton_formformula_1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ExitButton_formformula_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ExitButton_formformula_1.ForeColor = System.Drawing.Color.White;
             this.ExitButton_formformula_1.Location = new System.Drawing.Point(1251, 0);
@@ -552,10 +553,10 @@ namespace Calculator
             // 
             this.label15.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(115)))));
-            this.label15.Location = new System.Drawing.Point(799, 684);
+            this.label15.Location = new System.Drawing.Point(982, 604);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(153, 38);
+            this.label15.Size = new System.Drawing.Size(176, 38);
             this.label15.TabIndex = 64;
             this.label15.Text = "Тпр. = Т / Тпкр.";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -577,7 +578,7 @@ namespace Calculator
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(213)))), ((int)(((byte)(213)))));
-            this.ClientSize = new System.Drawing.Size(1290, 739);
+            this.ClientSize = new System.Drawing.Size(1287, 739);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);

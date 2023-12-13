@@ -123,7 +123,7 @@ namespace Calculator
                 Tsr = ((TL - Tns) / Math.Log(TL / Tns)) - 273;
                 Tpr = T / Tpkr;
                 z = Math.Pow((0.4 * Math.Log(Tpr) + 0.73), Ppr) + 0.1 * Ppr;
-                s = (0.03415 * ro * L) / (z * Tsr)/ Math.Pow(10, 6);
+                s = ((0.03415 * ro * L) / (z * Tsr))/ 1000000;
                 P = Math.Round(Pst * Math.Pow(Exp, s), 10);
                 textBox_P_form4.Text = Convert.ToString(P);
             }

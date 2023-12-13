@@ -114,9 +114,9 @@ namespace Calculator
                 double L = Convert.ToDouble(textBox_L_form2.Text);
                 double Pu = Convert.ToDouble(textBox_Pu_form2.Text);
                 double PP;
-                PP = p * g * L + Pu;
+                PP = p * g * L + Pu*101325;
                 PP = Math.Round(PP, 8);
-
+                PP = PP / 1000000;
                 textBox_PP_form2.Text = Convert.ToString(PP);
             }
 

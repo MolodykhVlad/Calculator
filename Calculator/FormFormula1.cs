@@ -113,6 +113,7 @@ namespace Calculator
                 double P;
                 P = ro * g * H;
                 P = Math.Round(P, 8);
+                P = P / 1000000;
 
                 textBox_P_form1.Text = Convert.ToString(P);
             }

@@ -325,7 +325,7 @@ namespace Calculator
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(194, 111);
             this.label5.TabIndex = 30;
-            this.label5.Text = "Введите Ру. –  устьевое давление, МПа.";
+            this.label5.Text = "Введите Ру. –  устьевое давление, атм.";
             // 
             // label6
             // 
